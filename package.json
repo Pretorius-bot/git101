@@ -1,0 +1,11 @@
+{
+  "name": "glide_web",
+  "version": "1.0.0",
+  "description": "A web application using Glide.",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
