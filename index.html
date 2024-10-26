@@ -4,45 +4,46 @@
     <title>Aramex - Shipping & Logistics Solutions</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav-top">
         <ul>
-          <li>Contact Us</li>
-          <li>Global</li>
-          <li>Login</li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="#">Login</a></li>
         </ul>
       </nav>
       <nav class="nav-main">
-        <a href="/" class="logo">ARAMEX</a>
+        <a href="/" class="logo">glide</a>
         <ul class="nav-links">
-          <li><a href="#">Track</a></li>
           <li><a href="#">Ship</a></li>
           <li><a href="#">Solutions</a></li>
-          <li><a href="#">Help & Support</a></li>
+          <li><a href="contact.html">Help & Support</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="hero">
       <div class="hero-content">
-        <h1>Global Shipping & Logistics Solutions</h1>
-        <p>Delivering excellence across borders with speed and reliability</p>
+        <h1>glide courier services</h1>
+        <p>Delivering excellence</p>
       </div>
     </section>
 
     <div class="tracking-box">
       <h2>Track Your Shipment</h2>
-      <form class="tracking-form">
+      <form class="tracking-form" id="trackingForm" onsubmit="trackItem(event)">
         <input 
           type="text" 
+          id="trackingNumber"
+          name="trackingNumber"
           class="tracking-input" 
           placeholder="Enter your tracking number"
         >
-        <button type="submit" class="track-btn">Track</button>
+        <button type="submit" class="track-btn" id="trackButton">Track</button>
+
       </form>
     </div>
 
@@ -50,17 +51,17 @@
       <h2>Our Services</h2>
       <div class="services-grid">
         <div class="service-card">
-          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ee1c25'><path d='M13 16V6h-2v10h2zm-1-14c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z'/></svg>" alt="Express">
+          <img src="cargo.jpg" alt="Express">
           <h3>Express Delivery</h3>
           <p>Fast and reliable international shipping solutions</p>
         </div>
         <div class="service-card">
-          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ee1c25'><path d='M20 8h-3V4H3v16h14v-4h3v4h2V8h-2zM5 18V6h10v12H5zm11-8h3v4h-3v-4z'/></svg>" alt="Freight">
+          <img src="cargo.jpg" alt="Freight">
           <h3>Freight Services</h3>
           <p>Comprehensive freight forwarding solutions</p>
         </div>
         <div class="service-card">
-          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ee1c25'><path d='M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.7L19.05 8 12 11.3 4.95 8 12 4.7zM4 16.5v-7l8 4 8-4v7l-8 4-8-4z'/></svg>" alt="Logistics">
+          <img src="cargo.jpg" alt="Logistics">
           <h3>Logistics Solutions</h3>
           <p>End-to-end supply chain management</p>
         </div>
@@ -70,11 +71,9 @@
     <footer>
       <div class="footer-content">
         <div class="footer-section">
-          <h3>About Aramex</h3>
+          <h3>About glide</h3>
           <ul>
             <li><a href="#">Company Overview</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press Room</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -82,18 +81,19 @@
           <ul>
             <li><a href="#">Express</a></li>
             <li><a href="#">Freight</a></li>
-            <li><a href="#">Logistics</a></li>
+            <li><a href="#">Logistics & courier
+            </a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h3>Help & Support</h3>
+          <h3>Our Phone</h3>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Track Shipment</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li>+254714258338</li>
+            <li>+254 20 2240549</li>
           </ul>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
